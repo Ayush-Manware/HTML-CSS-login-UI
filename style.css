@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    color: rgb(67, 67, 67);
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url('./background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50);
+    width: auto;
+    height: auto; 
+}
+
+.container{
+    background: rgba(213, 215, 213, 0.182);
+    backdrop-filter: blur(30px);
+    box-shadow: 5px 5px 30px rgba(105, 103, 103, 0.446);
+    width: 400px;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.form{
+   padding: 20px;
+}
+
+.form h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form h1:hover{
+    background: transparent;  
+    color: gray;
+    transition:  0.4s;
+    letter-spacing: 5px;
+}
+
+label{
+    color: rgb(110, 109, 109);
+    margin: 5px;
+    font-size: 15px;
+}
+
+input{
+    width: 100%;
+    resize: vertical;
+    padding: 15px 10px;
+    margin:5px 0px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus{
+    box-shadow: 1px 2px 5px rgba(73, 73, 73, 0.202);
+   outline: none;
+}
+
+::placeholder{
+    color: rgba(128, 128, 128, 0.718);
+}
+
+.forgotpswd{
+    text-align: right;
+    color: rgb(67, 67, 67);
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.forgotpswd:hover{
+    color:rgb(241, 240, 173);
+    transition: 0.2s;
+}
+
+.btn{
+    display: block;
+    margin-inline: auto;
+    padding: 5px;
+    width: 80%;
+    font-size: 20px;
+    background: rgba(213, 215, 213, 0.182);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(213, 215, 213, 0.182);
+    color: white;
+}
+
+.btn:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    transition: 0.2s;
+    letter-spacing: 3px;
+}
+
+.loginoptions{
+    text-align: center;
+    color: white;
+}
+
+/* .loginoptions:hover{
+    letter-spacing: 1px;
+    transition: 0.2s;
+} */
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social p{
+    margin-inline: 10px;
+}
+
+.icons:hover{
+    translate: 0px -9px;
+    /* transform: rotate(360deg); */
+    transition: ease-in-out 0.2s;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+   
