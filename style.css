@@ -6,52 +6,36 @@
 }
 
 body{
-    background: url('./background.jpg');
+    background-image: linear-gradient(236deg ,rgb(58, 166, 193),rgb(251, 127, 148));
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(50);
     width: auto;
-    height: auto; 
-}
-
-@media only screen and (max-width: 425px){
-	body{
-        background: rgb(70, 199, 231);
-        background-size: cover;
-        background-repeat: no-repeat;
-        backdrop-filter: blur(50);
-        width: auto;
-        height: 100vh; 
-    }
-    .container{
-        box-shadow: 5px 5px 30px rgba(105, 103, 103, 0.446);
-        width: auto;
-        height: auto; 
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 5px;
-    }
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
     background: rgba(213, 215, 213, 0.182);
     backdrop-filter: blur(30px);
     box-shadow: 5px 5px 30px rgba(105, 103, 103, 0.446);
-    width: 400px;
-    height: auto; 
-    margin-left: auto;
-    margin-right: auto;
+    width: 45vw;
     border-radius: 5px;
 }
 
 .form{
-   padding: 20px;
+   padding: 2vw;
+   /* border: 1px solid white; */
+   border-radius: 1vw;
 }
 
 .form h1{
     color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 10px;
+    font-size: 4vw;
 }
 
 .form h1:hover{
@@ -64,17 +48,18 @@ body{
 label{
     color: rgb(110, 109, 109);
     margin: 5px;
-    font-size: 15px;
+    font-size: 1.5vw;
 }
 
 input{
     width: 100%;
     resize: vertical;
-    padding: 15px 10px;
+    padding: 1.5vw 1vw;
     margin:5px 0px;
     outline: none;
     border: none;
     border-radius: 5px;
+    font-size: 1vw;
 }
 
 input:focus{
@@ -89,7 +74,7 @@ input:focus{
 .forgotpswd{
     text-align: right;
     color: rgb(67, 67, 67);
-    font-size: 13px;
+    font-size: 1.3vw;
     margin-right: 5px;
 }
 
@@ -103,15 +88,15 @@ input:focus{
     margin-inline: auto;
     padding: 5px;
     width: 80%;
-    font-size: 20px;
-    background: rgba(213, 215, 213, 0.182);
+    font-size: 2vw;
+    background: rgb(213, 215, 213);
     backdrop-filter: blur(30px);
     border: 2px solid rgba(213, 215, 213, 0.182);
     color: white;
 }
 
 .btn:hover{
-    color: rgb(67, 67, 67);
+    color: rgb(219, 96, 117);
     border: 2px solid rgb(255, 255, 255);
     transition: 0.4s;
     letter-spacing: 3px;
@@ -120,17 +105,25 @@ input:focus{
 .loginoptions{
     text-align: center;
     color: white;
+    font-size: 1.3vw;
 }
-
-/* .loginoptions:hover{
-    letter-spacing: 1px;
-    transition: 0.2s;
-} */
 
 .social{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.facebook{
+    width: 2.5vw;
+}
+
+.gmail{
+    width: 2.5vw;
+}
+
+.twitter{
+    width: 2.5vw;
 }
 
 .social p{
@@ -139,9 +132,110 @@ input:focus{
 
 .icons:hover{
     translate: 0px -9px;
-    /* transform: rotate(360deg); */
     transition: ease-in-out 0.4s;
-    /* border-bottom: 1px solid rgb(41, 41, 41); */
-    box-shadow: 0px 3px 0px rgb(74, 67, 67);
+    filter: drop-shadow(0px 3px 0px rgb(23, 23, 23));
+    /* box-shadow: 0px 3px 0px rgb(74, 67, 67); */
+}
+
+@media screen and (min-width: 601px) and (max-width: 968px){
+	body{
+        background-image: linear-gradient(45deg ,rgb(70, 199, 231),pink);
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(50);
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+    }
+    .container{
+        box-shadow: 5px 5px 30px rgba(105, 103, 103, 0.446);
+        border-radius: 5px;
+        width: 80%;
+    }
+    .form h1{
+        font-size: 5vw;
+    }
+
+    label{
+        font-size: 2.3vw;
+    }
+    
+    .forgotpswd{
+        font-size: 2vw;
+    }
+
+    .btn{
+        font-size: 3vw;
+    }
+
+    .loginoptions{
+        font-size: 3vw;
+    }
+
+    .facebook {
+        width: 4.5vw;
+    }
+
+    .twitter {
+        width: 4.5vw;
+    }
+
+    .gmail {
+        width: 4.5vw;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .container{
+        box-shadow: 5px 5px 30px rgba(105, 103, 103, 0.446);
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    body{
+        /* background-image: radial-gradient(45deg ,pink,rgb(70, 199, 231),pink); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(50);
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+    }
+
+    .form h1{
+        font-size: 8vw;
+    }
+
+    label{
+        font-size: 3.5vw;
+    }
+    
+    .forgotpswd{
+        font-size: 3vw;
+    }
+
+    .btn{
+        font-size: 4vw;
+    }
+
+    .loginoptions{
+        font-size: 4vw;
+    }
+
+    .facebook {
+        width: 5.5vw;
+    }
+
+    .twitter {
+        width: 5.5vw;
+    }
+
+    .gmail {
+        width: 5.5vw;
+    }
 }
    
